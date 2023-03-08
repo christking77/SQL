@@ -1,0 +1,16 @@
+SELECT MIN(Unitprice) FROM Supermarket_sales;
+SELECT MAX(Unitprice) FROM Supermarket_sales;
+SELECT MIN(Quantity) FROM Supermarket_sales;
+SELECT MAX(Quantity) FROM supermarket_sales;
+SELECT MIN(Quantity) FROM supermarket_sales WHERE PRODUCTLINE=="Health and beauty";
+SELECT MAX(Quantity) FROM supermarket_sales WHERE PRODUCTLINE=="Health and beauty";
+SELECT MIN(Unitprice) FROM supermarket_sales WHERE PRODUCTLINE=="Health and beauty";
+SELECT MAX(Unitprice) FROM supermarket_sales WHERE PRODUCTLINE=="Health and beauty";
+SELECT MIN(Quantity) FROM supermarket_sales WHERE PRODUCTLINE=="Electronic accessories";
+SELECT MAX(Quantity) FROM supermarket_sales WHERE PRODUCTLINE=="Electronic accessories";
+SELECT COUNT(INVOICEID) FROM supermarket_sales WHERE GENDER=="Male"And Productline=="Health and beauty";
+SELECT COUNT(INVOICEID) FROM supermarket_sales WHERE GENDER=="Female"And Productline=="Fashion accessories";
+SELECT COUNT(INVOICEID) FROM supermarket_sales WHERE (GENDER=="Female") or (Productline=="Fashion accessories" and Productline=="Sports and travel");
+SELECT SUM(Tax) from supermarket_sales Where City== "yangon";
+SELECT MAX(Total) from supermarket_sales Where City== "yangon";
+SELECT MAX(Total) from supermarket_sales Where City== "Mandalay";
